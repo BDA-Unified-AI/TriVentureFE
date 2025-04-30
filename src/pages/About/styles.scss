@@ -1,0 +1,348 @@
+.about-page-container {
+  overflow-x: hidden;
+
+  .about-hero {
+    color: white;
+    min-height: 50vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 0;
+    transition: all 0.3s ease;
+
+    @media (min-width: 768px) {
+      min-height: 70vh;
+      padding: 6rem 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      margin-top: 1rem;
+      opacity: 0.9;
+      color: white;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: 768px) {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        max-width: 800px;
+      }
+    }
+  }
+
+  .mission-card {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 20;
+    background-color: white;
+    padding: 1rem;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    @media (min-width: 768px) {
+      margin-top: -5rem;
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4c86e4;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      @media (min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    }
+
+    .project-info {
+      .project-info-item {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          font-size: 1.1rem;
+          align-items: flex-start;
+        }
+
+        strong {
+          margin-right: 8px;
+          color: #555;
+          font-weight: 600;
+          margin-bottom: 4px;
+
+          @media (min-width: 768px) {
+            margin-bottom: 0;
+            min-width: 120px;
+          }
+        }
+
+        span {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .vision-card,
+  .background-card {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: none;
+    padding: 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .vision-text {
+      font-size: 1rem;
+      line-height: 1.6;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+    }
+
+    .mission-list {
+      margin: 15px 0 15px 10px;
+      padding-left: 10px;
+
+      @media (min-width: 768px) {
+        margin: 20px 0 20px 20px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 12px;
+        line-height: 1.5;
+        font-size: 1rem;
+
+        @media (min-width: 768px) {
+          margin-bottom: 15px;
+          line-height: 1.6;
+          font-size: 1.05rem;
+        }
+      }
+    }
+  }
+
+  .features-row {
+    .feature-col {
+      margin-bottom: 16px;
+    }
+  }
+
+  .feature-card {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    padding: 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      color: #4c86e4;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+
+      @media (min-width: 768px) {
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .team-row {
+    .team-col {
+      margin-bottom: 20px;
+    }
+  }
+
+  .team-member-card {
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-avatar {
+      border: 3px solid #f1f5fd;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .member-role {
+      color: #4c86e4;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+
+      @media (min-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .member-contact {
+      margin: 15px 0;
+
+      p {
+        margin-bottom: 8px;
+        color: #555;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+
+        @media (min-width: 768px) {
+          font-size: 1rem;
+        }
+
+        svg {
+          margin-right: 8px;
+          color: #4c86e4;
+        }
+      }
+    }
+
+    .social-links {
+      margin-top: 10px;
+
+      a {
+        color: #555;
+        font-size: 1.3rem;
+        transition: color 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+          color: #4c86e4;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .contact-card {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4c86e4;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+
+      @media (min-width: 768px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    }
+
+    a {
+      color: #4c86e4;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: #3a6ac0;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.footer-container {
+  background-color: #2732a3;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  color: #bfbfbf;
+  margin-bottom: 20px;
+}
+
+.footer-icons .social-icon {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-icons .social-icon:hover {
+  color: #1890ff;
+}
+
+.footer-copyright {
+  color: #bfbfbf;
+  margin-top: 10px;
+}
+
+.banner-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-swiper {
+  position: relative;
+}
+
+.banner-swiper .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.banner-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+.banner-swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.swiper-slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.swiper-fade .swiper-slide {
+  transition-property: opacity;
+}
+
+.swiper-fade .swiper-slide .swiper-slide-active {
+  animation: fadeIn 1s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}

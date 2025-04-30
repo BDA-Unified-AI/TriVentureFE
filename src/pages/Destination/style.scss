@@ -1,0 +1,27 @@
+/* For finer control, you can target the scrollbar pseudo-elements: */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #71b1ed; /* Primary color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e2e8f0; /* Lighter color for the track */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background-size: 200% 100%;
+}
